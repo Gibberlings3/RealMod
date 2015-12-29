@@ -1,0 +1,76 @@
+BACKUP ~real_mod/backup~ // Location to store files for uninstall/reinstall
+AUTHOR ~you@you.com~     // email address displayed if install fails
+
+ALWAYS // Anything in this block will execute for every component.
+
+  // This ALWAYS/ACTION_IF combo will convert charsets for use on EE games.
+  // You can delete this entire ALWAYS or ACTION_IF block if your mod can not be installed on an EE game. Also delete the lib and translations/iconv folders. 
+  ACTION_IF NOT VARIABLE_IS_SET cd_always THEN BEGIN
+
+    // This ACTION_IF and the OUTER_SET following ensure this block only executes once per install, no matter how may components are selected.
+    OUTER_SET cd_always = 1 
+
+    // Note: WeiDU v237 will have this functionality natively--you can remove this include statement and the library once v237 is released.
+    INCLUDE ~%MOD_FOLDER%/lib/handle_charsets.tpa~
+    
+    ACTION_DEFINE_ARRAY cdnoconvert BEGIN setup END // List of tra files that contain ONLY strings for the WeiDU installer and NOT game content
+    ACTION_DEFINE_ARRAY cdreload BEGIN real_mod END // List of tra files that contain strings used for game content that get converted in the next step.
+    
+    // On EE games, convert tra files to utf-8 so that games don't crash for non-English.
+    LAF HANDLE_CHARSETS INT_VAR infer_charset = 1 STR_VAR tra_path = EVAL ~%MOD_FOLDER%/languages~ noconvert_array = cdnoconvert reload_array = cdreload  END
+  
+  END
+  
+  // If you do have stuff you want to execute for every component, put it here.
+
+END
+
+VERSION ~v2~ // Version number; handy for troubleshooting when receiving log files from failed installs.
+
+// If you choose to not use an HTML readme, you can delete the g3readme.css from the style folder.
+README ~real_mod/readme-real_mod.html~ 
+
+AUTO_TRA ~real_mod/languages/%s%~
+
+LANGUAGE
+  ~English~ // Name as displayed in WeiDU's language menu
+  ~english~ // Name of folder actually containing tra files.
+  ~real_mod/languages/english/real_mod.tra~ // tra file containing game content strings.
+  ~real_mod/languages/english/setup.tra~    // tra file containing only strings for WeiDU's install process. 
+  
+/* 
+If you have more than one language, use the block below as a template. 
+
+Note the English tra files listed above the translated ones. This allows languages with partial 
+translations to still be installed, but with English in place of missing strings.
+
+LANGUAGE
+  ~Francais (Translation by someone)~
+  ~french~
+  ~real_mod/languages/english/real_mod.tra~
+  ~real_mod/languages/english/setup.tra~
+  ~real_mod/languages/french/real_mod.tra~
+  ~real_mod/languages/french/setup.tra~
+*/  
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// A real mod component                             \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @100 // Because this is a WeiDU prompt, this string goes into setup.tra
+
+// If you do not have audio, erase this section and delete the audio folder. 
+// If you do have audio, place all ogg files in the audio folder.
+LAF HANDLE_AUDIO END
+
+// If you do not have compressed tilesets (tiz) for new areas, erase this section and delete the tiz folder.
+// If you do have tilesets, place all of them in the tiz folder. 
+LAF HANDLE_TILESETS END
+
+COPY_EXISTING ~blun01.itm~ ~override/realmod.itm~
+  SAY 0x08 @1001 // Because these strings go into the game, they need to go into real_mod.tra
+  SAY 0x50 @1002 // so that they can undergo proper charset conversion on EE games

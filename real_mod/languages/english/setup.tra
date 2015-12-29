@@ -1,0 +1,3 @@
+// Ideally this file is used purely for WeiDU strings, so it won't need utf-8 conversion for EE games.
+// Strings that actually go into the game should be routed to another tra file.
+@100 = ~This is Real Mod's component~

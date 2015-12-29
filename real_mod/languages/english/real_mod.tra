@@ -1,0 +1,15 @@
+// Strings in this file will undergo utf8 conversion for EE games.
+@1001 = ~Club~
+@1002 = ~Most clubs are stout, hardwood sticks, narrow at the grip and wider at the end.  This simple weapon has been used since mankind first began using tools.  Anyone can find a good stout piece of wood and swing it; hence the club's widespread use.
+
+STATISTICS:
+
+Damage:  1D6
+Damage type:  crushing
+Weight: 3
+Speed Factor: 4
+Proficiency Type:Club
+Type:  1-handed
+Requires: 5 Strength
+Not Usable By:
+ Mage~
