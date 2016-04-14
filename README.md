@@ -4,7 +4,7 @@ An example Infinity Engine mod that demonstrates current best practices
 
 ## Introduction
 
-This is a fully-functioning mod that exists to showcase how to use the [Mod Packaging](https://GitHub.com/Gibberlings3/ModPackaging) utility and demonstrate the current best practices for audio conversion, character set handling, and tileset decompression.
+This is a fully-functioning mod that exists to showcase how to use the [Mod Packaging](https://GitHub.com/Gibberlings3/ModPackaging) utility and to demonstrate the current best practices for audio conversion, character set handling, and tileset decompression.
 
 
 ## Version History
