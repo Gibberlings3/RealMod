@@ -27,7 +27,7 @@ VERSION ~v2~ // Version number; handy for troubleshooting when receiving log fil
 // If you choose to not use an HTML readme, you can delete the g3readme.css from the style folder.
 README ~real_mod/readme-real_mod.html~ 
 
-AUTO_TRA ~real_mod/languages/%s%~
+AUTO_TRA ~real_mod/languages/%s~ //~%~
 
 LANGUAGE
   ~English~ // Name as displayed in WeiDU's language menu
