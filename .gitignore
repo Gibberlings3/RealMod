@@ -2,8 +2,6 @@
 *.rar
 *.zip
 *.tar.gz
-*.debug
-*.log
 *.exe
 !iconv.exe
 !oggdec.exe

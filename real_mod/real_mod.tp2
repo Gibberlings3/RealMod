@@ -8,10 +8,7 @@ ALWAYS // Anything in this block will execute for every component.
   ACTION_IF NOT VARIABLE_IS_SET cd_always THEN BEGIN
 
     // This ACTION_IF and the OUTER_SET following ensure this block only executes once per install, no matter how may components are selected.
-    OUTER_SET cd_always = 1 
-
-    // Note: WeiDU v237 will have this functionality natively--you can remove this include statement and the library once v237 is released.
-    INCLUDE ~%MOD_FOLDER%/lib/handle_charsets.tpa~
+    OUTER_SET cd_always = 1
     
     ACTION_DEFINE_ARRAY cdnoconvert BEGIN setup END // List of tra files that contain ONLY strings for the WeiDU installer and NOT game content
     ACTION_DEFINE_ARRAY cdreload BEGIN real_mod END // List of tra files that contain strings used for game content that get converted in the next step.
