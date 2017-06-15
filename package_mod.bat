@@ -10,7 +10,7 @@ set mod_version=v2
 set mod_folder=real_mod
 
 REM /* MODIFY: list here which IE games the mod is compatible with, from this list of possibilities: */
-REM /* %bg1%, %bg2%, %bgt%, %tutu%, %bgee%, %bgiiee%, %iwd1%, %iwdee%, %iwd2%, %iwd2ee%, %iwd-in-bg2%, %pst%, %pstee% */
+REM /* %bg1%, %bg2%, %bgt%, %tutu%, %bgee%, %bgiiee%, %iwd1%, %iwdee%, %iwd2%, %iwd2ee%, %iwd-in-bg2%, %pst%, %pstee%, %eet% */
 set "compatible_games=%bg1%, %bg2%, %bgt%, %tutu%, %bgee%, or %bgiiee%"
 
 REM /* MODIFY: these variables have sensible default values but they may need to be tweaked to match your particular mod */
