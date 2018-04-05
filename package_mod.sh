@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # /* this initializes the values for the different variables referenced in compatible_games */
-bash "../ModPackaging/utilities/ie_games.sh"
+source "../ModPackaging/utilities/ie_games.sh"
 
 # /* MODIFY: set the values of the 3 variables below to reflect the current mod version */
 export mod_name="Real Mod"
