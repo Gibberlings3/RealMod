@@ -14,7 +14,7 @@ ALWAYS // Anything in this block will execute for every component.
     ACTION_DEFINE_ARRAY cdreload BEGIN real_mod END // List of tra files that need to be reloaded after conversion because they were previously loaded in the LANGUAGE section
     
     // On EE games, convert game content tra files to utf-8 so that games don't crash when encountering international characters.
-    LAF HANDLE_CHARSETS INT_VAR infer_charset = 1 STR_VAR tra_path = EVAL ~%MOD_FOLDER%/languages~ noconvert_array = cdnoconvert reload_array = cdreload  END
+    LAF HANDLE_CHARSETS INT_VAR infer_charsets = 1 STR_VAR tra_path = EVAL ~%MOD_FOLDER%/languages~ noconvert_array = cdnoconvert reload_array = cdreload  END
   
   END
   
