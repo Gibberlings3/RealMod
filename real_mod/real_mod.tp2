@@ -22,7 +22,7 @@ ALWAYS // Anything in this block will execute for every component.
 
 END
 
-VERSION ~v2~ // Version number; handy for troubleshooting when receiving log files from failed installs.
+VERSION ~v3~ // Version number; handy for troubleshooting when receiving log files from failed installs.
 
 // If you choose to not use an HTML readme, you can delete the g3readme.css from the style folder.
 README ~real_mod/readme-real_mod.html~ 
