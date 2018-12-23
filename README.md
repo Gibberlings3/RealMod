@@ -9,6 +9,9 @@ This is a fully-functioning mod that exists to showcase how to use the [Mod Pack
 
 ## Version History
 
+Version 3 - August 26, 2018
+- Branding Updates
+
 Version 2 - October 1, 2014
 - Still keepin' it real.
 
