@@ -1,5 +1,6 @@
 BACKUP ~real_mod/backup~ // Location to store files for uninstall/reinstall
 AUTHOR ~you@you.com~     // email address displayed if install fails
+// SUPPORT ~https://www.gibberlings3.net/forums/forum/28-miscellaneous-released-mods/~ // alternatively, you can also direct players to a forum or thread instead - use support OR author, but not both
 
 ALWAYS // Anything in this block will execute for every component.
 
@@ -22,7 +23,7 @@ ALWAYS // Anything in this block will execute for every component.
 
 END
 
-VERSION ~v3~ // Version number; handy for troubleshooting when receiving log files from failed installs.
+VERSION ~v4~ // Version number; handy for troubleshooting when receiving log files from failed installs.
 
 // If you choose to not use an HTML readme, you can delete the g3readme.css from the style folder.
 README ~real_mod/readme-real_mod.html~ 
@@ -64,9 +65,25 @@ BEGIN @100 // Because this is a WeiDU prompt, this string goes into setup.tra
 // If you do have audio, place all ogg files in the audio folder.
 LAF HANDLE_AUDIO END
 
+// There are now two ways to handle tilesets for new area art. If this mod is *not* for EE, then ship the tiles
+// as compressed tiz files in the tiz folder and decompress them at install time with tisunpack as follows:
 // If you do not have compressed tilesets (tiz) for new areas, erase this section and delete the tiz folder.
-// If you do have tilesets, place all of them in the tiz folder. 
 LAF HANDLE_TILESETS END
+
+// Otherwise, you should ship area art as TIS+PVRZ (for the EE) and then convert them back to straight 
+// TIS files at install time for non-EE games. You'll need the tile2ee tool in the tools folder and
+// the lib/a7_tools.tpa library.
+ACTION_IF GAME_IS ~bgee iwdee pstee bg2ee eet~ BEGIN // ee game
+  COPY ~real_mod/graphics~ ~override~ // ee games just need these files copied over
+END ELSE BEGIN
+  INCLUDE ~real_mod/lib/a7_tools.tpa~ // tile2ee
+  LAF HANDLE_TILE2EE INT_VAR quality_v1 = 9 STR_VAR input_path = ~real_mod/graphics~ END // non-ee games need these converted
+END
+
+// If you have an NPC that needs portraits, create the five sizes in the portrait folder and then
+// use this function to copy over the correct sizes for each game. 
+INCLUDE ~real_mod/lib/cd_portrait_copy.tph~
+LAF cd_portrait_npc STR_VAR source = ~realmod~ source_path = ~real_mod/portraits~ END
 
 COPY_EXISTING ~blun01.itm~ ~override/realmod.itm~
   SAY 0x08 @1001 // Because these strings go into the game, they need to go into real_mod.tra
