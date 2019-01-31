@@ -9,6 +9,9 @@ This is a fully-functioning mod that exists to showcase how to use the [Mod Pack
 
 ## Version History
 
+Version 4 - January 31, 2019
+- Added tile2ee and portrait routines
+
 Version 3 - August 26, 2018
 - Branding Updates
 
