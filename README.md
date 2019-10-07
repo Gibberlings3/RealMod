@@ -1,6 +1,4 @@
 # Real Mod
-An example Infinity Engine mod that demonstrates current best practices
-
 
 ## Introduction
 
@@ -17,7 +15,6 @@ Version 3 - August 26, 2018
 
 Version 2 - October 1, 2014
 - Still keepin' it real.
-
 
 Version 1 - June 1, 2013
 - Became a real mod.
