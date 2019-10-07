@@ -4,6 +4,9 @@
 
 This is a fully-functioning mod that exists to showcase how to use the [Mod Packaging](https://GitHub.com/Gibberlings3/ModPackaging) utility and to demonstrate the current best practices for audio conversion, character set handling, and tileset decompression.
 
+## Copyright
+
+This mod is licensed under [CC-BY-4.0](LICENSE).
 
 ## Version History
 
