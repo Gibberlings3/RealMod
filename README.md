@@ -6,7 +6,7 @@ This is a fully-functioning mod that exists to showcase how to use the [Mod Pack
 
 ## Copyright
 
-This mod is licensed under [CC-BY-4.0](LICENSE).
+This mod is licensed under [CC-BY-4.0](LICENSE). Visit the [GitHub-Templates](https://GitHub.com/Gibberlings3/Github-Templates) repo if you need help choosing a license for your mod.
 
 ## Version History
 
