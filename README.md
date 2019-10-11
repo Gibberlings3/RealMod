@@ -2,7 +2,7 @@
 
 ![Latest Release](https://img.shields.io/github/v/release/gibberlings3/realmod?include_prereleases)
 ![Platform](https://img.shields.io/static/v1?label=platform&message=windows%20%7C%20macos%20%7C%20linux&color=informational)
-![License](https://img.shields.io/github/license/gibberlings3/realmod)
+![License](https://img.shields.io/static/v1?label=license&message=CC-BY-4.0&color=green)
 
 ## Introduction
 
@@ -10,7 +10,7 @@ This is a fully-functioning mod that exists to showcase how to use the [Mod Pack
 
 ## Copyright
 
-This mod is licensed under [CC-BY-4.0](LICENSE). Visit the [GitHub-Templates](https://GitHub.com/Gibberlings3/Github-Templates) repo if you need help choosing a license for your mod.
+Real Mod is copyright (c) 2019 Mike1072 and CamDawg. You are allowed to submit [maintenance updates](LICENSE-MAINTENANCE.md) for this mod. This mod is additionally licensed under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/). Visit the [GitHub-Templates](https://GitHub.com/Gibberlings3/Github-Templates) repo if you need help choosing a license for your mod.
 
 ## Version History
 
