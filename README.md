@@ -10,7 +10,11 @@ This is a fully-functioning mod that exists to showcase how to use the [Mod Pack
 
 ## Copyright
 
-Real Mod is copyright (c) 2019 Mike1072 and CamDawg. You are allowed to submit [maintenance updates](LICENSE-MAINTENANCE.md) for this mod. This mod is additionally licensed under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/). Visit the [GitHub-Templates](https://GitHub.com/Gibberlings3/Github-Templates) repo if you need help choosing a license for your mod.
+Real Mod is copyright (c) 2019 Mike1072 and CamDawg.
+
+You are allowed to submit [maintenance updates](MAINTENANCE-NOTICE.md) for this mod. This mod is additionally licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
+
+Visit the [GitHub-Templates](https://GitHub.com/Gibberlings3/Github-Templates) repo if you need help choosing a license for your mod.
 
 ## Version History
 
