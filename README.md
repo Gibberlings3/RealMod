@@ -2,7 +2,7 @@
 
 ![Latest Release](https://img.shields.io/github/v/release/gibberlings3/realmod?include_prereleases)
 ![Platform](https://img.shields.io/static/v1?label=platform&message=windows%20%7C%20macos%20%7C%20linux&color=informational)
-![License](https://img.shields.io/static/v1?label=license&message=CC-BY-4.0&color=green)
+![License](https://img.shields.io/static/v1?label=license&message=CC0-1.0&color=green)
 
 ## Introduction
 
