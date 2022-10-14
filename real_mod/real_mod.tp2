@@ -23,7 +23,7 @@ ALWAYS // Anything in this block will execute for every component.
 
 END
 
-VERSION ~v4~ // Version number; handy for troubleshooting when receiving log files from failed installs.
+VERSION ~v5~ // Version number; handy for troubleshooting when receiving log files from failed installs.
 
 // If you choose to not use an HTML readme, you can delete the g3readme.css from the style folder.
 README ~real_mod/readme-real_mod.html~ 
@@ -60,6 +60,7 @@ LANGUAGE
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 
 BEGIN @100 // Because this is a WeiDU prompt, this string goes into setup.tra
+LABEL ~cd_RealMod_component_name~ // add LABELs to help out Project Infinity
 
 // If you do not have audio, erase this section and delete the audio folder. 
 // If you do have audio, place all ogg files in the audio folder.

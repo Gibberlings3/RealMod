@@ -18,6 +18,10 @@ Visit the [GitHub-Templates](https://GitHub.com/Gibberlings3/Github-Templates) r
 
 ## Version History
 
+Version 5 - October 14, 2022
+- Updated readme; primarily in the installation instructions section
+- Added Project Infinity hooks
+
 Version 4 - January 31, 2019
 - Added tile2ee and portrait routines
 
