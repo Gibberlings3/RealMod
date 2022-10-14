@@ -5,7 +5,7 @@ source "../ModPackaging/utilities/ie_games.sh"
 
 # /* MODIFY: set the values of the 3 variables below to reflect the current mod version */
 export mod_name="Real Mod"
-export mod_version="v2"
+export mod_version="v4"
 export mod_folder="real_mod"
 
 # /* MODIFY: these variables have sensible default values but they may need to be tweaked to match your particular mod */
